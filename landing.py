@@ -25,11 +25,11 @@ class UI(QMainWindow):
             self.lineEdit.clear()
             return
             
-    def error(self,errormsg):
+    def error(self,errmsg):
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Critical)
         msg.setText("Error")
-        msg.setInformativeText(errormsg)
+        msg.setInformativeText(errmsg)
         msg.setWindowTitle("Error")
         msg.exec_()
     
